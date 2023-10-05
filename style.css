@@ -3,6 +3,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: rgb(251, 251, 251);
+    background-image: url(https://thumbs.dreamstime.com/b/ruido-negro-sobre-un-fondo-blanco-textura-oscura-de-puntos-y-gr%C3%A1nulos-185919010.jpg);
 }
 
 header {
@@ -25,8 +26,8 @@ nav ul {
     display: flex;
     justify-content: center;
     background-color: rgb(36, 36, 36);
-    margin: 0;
-    justify-content: space-evenly;
+    margin: 10px;
+    justify-content: center;
 }
 
 nav ul li {
@@ -165,7 +166,68 @@ footer {
 .botonCurriculum {
     width: 150px;
     height: 50px;
-    background-color: rgb(244, 221, 244);
+    background-color: rgb(147, 147, 147);
     border-radius: 20px;
     border: 1px black solid;
+}
+
+.botonCurriculum a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.botonCurriculum:hover {
+    background-color: #000000;
+}
+
+.habilidades {
+    width: 50px;
+    padding: 22px;
+}
+
+.educacion {
+    width: 50px;
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: rgb(247, 251, 254);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+input[type="email"],
+textarea {
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+textarea {
+    height: 100px;
+    width: 380px;
+}
+
+input[type="submit"] {
+    background-color: #ff766f;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #ff0000;
 }
