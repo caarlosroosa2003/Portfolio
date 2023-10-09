@@ -4,16 +4,16 @@ body {
     padding: 0;
     background-color: rgb(251, 251, 251);
     background-image: url(https://thumbs.dreamstime.com/b/ruido-negro-sobre-un-fondo-blanco-textura-oscura-de-puntos-y-gr%C3%A1nulos-185919010.jpg);
+    background-size: cover;
 }
 
 header {
-    /*background-color: rgb(36, 36, 36);*/
     color: rgb(255, 255, 255);
     text-align: center;
     padding: 20px 0;
-    height: 12vh;
     background-image: url(https://as1.ftcdn.net/v2/jpg/02/17/56/58/1000_F_217565833_eylbMeAi93YunYGhZH2R29nylTDU8Ezd.jpg);
     background-size: cover;
+    height: 12vh;
 }
 
 nav{
@@ -55,7 +55,7 @@ nav ul a:hover {
 }
 
 section {
-    padding: 40px;
+    padding: 20px;
 }
 
 .project {
@@ -237,4 +237,56 @@ input[type="submit"] {
 
 input[type="submit"]:hover {
     background-color: #ff0000;
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        padding: 10px 0;
+    }
+    
+    nav ul {
+        margin-top: 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    nav ul a {
+        padding: 10px 0;
+    }
+    
+    .project {
+        flex-direction: column;
+    }
+    
+    .project img {
+        width: 100%;
+        margin-top: 20px;
+    }
+    
+    form {
+        max-width: 90%;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    header {
+        padding: 60px 0;
+    }
+    
+    nav ul {
+        margin-top: 40px;
+    }
+    
+    nav ul a {
+        font-size: 24px;
+        padding: 10px 20px;
+    }
+    
+    .project img {
+        width: 800px;
+    }
+    
+    footer {
+        padding: 30px 0;
+    }
 }
